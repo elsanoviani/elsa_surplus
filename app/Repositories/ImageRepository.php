@@ -11,7 +11,7 @@ class ImageRepository
     
     public static function imageSection($rawData)
     {
-        $data = \DB::table('waizly_db.image')
+        $data = \DB::table('surplus_db.image')
             ->select('image.name','image.file','image.enable');
 
             $filter = $rawData['filter'] ? $rawData['filter'] : '';

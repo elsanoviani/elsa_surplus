@@ -11,9 +11,9 @@ class CategoryProductRepository
     
     public static function categoryProductSection($rawData)
     {
-        $data = \DB::table('waizly_db.category_product')
-            ->join('waizly_db.product', 'category_product.product_id', '=', 'product.id')
-            ->join('waizly_db.category', 'category_product.category_id', '=', 'category.id')
+        $data = \DB::table('surplus_db.category_product')
+            ->join('surplus_db.product', 'category_product.product_id', '=', 'product.id')
+            ->join('surplus_db.category', 'category_product.category_id', '=', 'category.id')
             ->select('category_product.product_id','category_product.category_id','product.name as product_name','category.name as category_name');
 
             $filter = $rawData['filter'] ? $rawData['filter'] : '';

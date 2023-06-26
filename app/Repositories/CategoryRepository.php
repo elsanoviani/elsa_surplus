@@ -11,7 +11,7 @@ class CategoryRepository
     
     public static function categorySection($rawData)
     {
-        $data = \DB::table('waizly_db.category')
+        $data = \DB::table('surplus_db.category')
             ->select('category.name','category.enable');
 
             $filter = $rawData['filter'] ? $rawData['filter'] : '';

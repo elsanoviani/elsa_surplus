@@ -11,7 +11,7 @@ class ProductRepository
     
     public static function productSection($rawData)
     {
-        $data = \DB::table('waizly_db.product')
+        $data = \DB::table('surplus_db.product')
             ->select('product.name','product.description','product.enable');
 
             $filter = $rawData['filter'] ? $rawData['filter'] : '';
