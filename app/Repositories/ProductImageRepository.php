@@ -11,9 +11,9 @@ class ProductImageRepository
     
     public static function productImageSection($rawData)
     {
-        $data = \DB::table('surplus_db.product_image')
-            ->join('surplus_db.product', 'product_image.product_id', '=', 'product.id')
-            ->join('surplus_db.image', 'product_image.image_id', '=', 'image.id')
+        $data = \DB::table('waizly_db.product_image')
+            ->join('waizly_db.product', 'product_image.product_id', '=', 'product.id')
+            ->join('waizly_db.image', 'product_image.image_id', '=', 'image.id')
             ->select('product_image.product_id','product_image.image_id','product.name as product_name','image.name as image_name');
 
             $filter = $rawData['filter'] ? $rawData['filter'] : '';

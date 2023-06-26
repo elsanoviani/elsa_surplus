@@ -1,4 +1,4 @@
-# Surplus 
+# Waizly
 Suggested recipes for lunch API
 
 ## How to Deploy
@@ -18,7 +18,7 @@ __2. Install Composer__
 
 __3. Clone this Repository__
 ```console
-  https://github.com/elsanoviani/elsa_surplus.git && cd surplus_elsa
+  https://github.com/elsanoviani/elsa_waizly.git && cd waizly_elsa
 ```
 
 __4. Copy .env File__
